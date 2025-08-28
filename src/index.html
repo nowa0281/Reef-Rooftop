@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1220" />
+    <title>Reef Rooftop Restaurant, Ranchi | Elevated Dining</title>
+    <meta name="description" content="Reef Rooftop Restaurant at Hotel Coral Grand, Ranchi. Elegant rooftop dining with panoramic city views, live music, multi-cuisine menu, and cozy ambiance." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="#home" class="brand">
+                <span class="logo">Reef</span>
+                <span class="brand-text">Rooftop Restaurant</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul id="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home" class="hero" aria-label="Hero">
+        <div class="hero-media" role="img" aria-label="Rooftop dining with city skyline"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1><span class="accent">Reef</span> Rooftop Restaurant</h1>
+            <p class="tagline">Elevated Dining in the Heart of Ranchi</p>
+            <div class="cta-group">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-ghost">Reserve a Table</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About"></a>
+    </main>
+
+    <section id="about" class="section about">
+        <div class="container two-col">
+            <div class="media">
+                <img src="./assets/images/rooftop-ambience.svg" alt="Cozy rooftop ambience with live music and warm lighting" />
+            </div>
+            <div class="content">
+                <h2>About Us</h2>
+                <p>
+                    Perched atop Hotel Coral Grand on Purulia Road, <strong>Reef Rooftop Restaurant</strong> offers
+                    a serene, elegant escape with panoramic city views. Sink into cozy seating beneath ambient
+                    lighting as soft live music sets the tone for a memorable evening.
+                </p>
+                <p>
+                    Our carefully curated multi-cuisine menu spans North Indian, Chinese, Continental, Bengali,
+                    and indulgent Desserts & Beverages—crafted for golden sunsets and starry night skies.
+                </p>
+                <ul class="amenities" aria-label="Amenities">
+                    <li title="Rooftop Seating">🌆 Rooftop Seating</li>
+                    <li title="Live Music">🎶 Live Music</li>
+                    <li title="Takeaway">🥡 Takeaway</li>
+                    <li title="Home Delivery">🛵 Delivery</li>
+                    <li title="Wheelchair Accessible">♿ Wheelchair Access</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu">
+        <div class="container">
+            <div class="section-head">
+                <h2>Our Menu</h2>
+                <p>Explore favorites or browse by category.</p>
+            </div>
+
+            <div class="tabs" role="tablist" aria-label="Menu categories">
+                <button class="tab active" role="tab" aria-selected="true" data-category="all">All</button>
+                <button class="tab" role="tab" data-category="breads">Breads</button>
+                <button class="tab" role="tab" data-category="starters">Starters</button>
+                <button class="tab" role="tab" data-category="main">Main Course</button>
+                <button class="tab" role="tab" data-category="momos">Momos</button>
+                <button class="tab" role="tab" data-category="wraps">Wraps</button>
+                <button class="tab" role="tab" data-category="salads">Salads</button>
+                <button class="tab" role="tab" data-category="snacks">Snacks</button>
+                <button class="tab" role="tab" data-category="platters">Platters & Biryani</button>
+                <button class="tab" role="tab" data-category="desserts">Desserts & Beverages</button>
+            </div>
+
+            <div class="cards" id="menu-cards" aria-live="polite">
+                <!-- Example Items -->
+                <article class="card" data-category="breads">
+                    <img src="./assets/images/lachha-paratha.svg" alt="Lachha Paratha" />
+                    <div class="card-body">
+                        <h3>Lachha Paratha</h3>
+                        <p>Flaky whole wheat bread, tandoor-cooked.</p>
+                        <span class="price">₹60</span>
+                    </div>
+                </article>
+                <article class="card" data-category="breads">
+                    <img src="./assets/images/kashmiri-naan.svg" alt="Kashmiri Naan" />
+                    <div class="card-body">
+                        <h3>Kashmiri Naan</h3>
+                        <p>Stuffed with nuts and dried fruits, brushed with ghee.</p>
+                        <span class="price">₹70</span>
+                    </div>
+                </article>
+                <article class="card" data-category="main">
+                    <img src="./assets/images/methi-chicken.svg" alt="Methi Chicken" />
+                    <div class="card-body">
+                        <h3>Methi Chicken</h3>
+                        <p>Chicken simmered with fenugreek and aromatic spices.</p>
+                        <span class="price">₹290</span>
+                    </div>
+                </article>
+                <article class="card" data-category="main">
+                    <img src="./assets/images/dalchini-murgh.svg" alt="Dalchini Murgh Pasanda" />
+                    <div class="card-body">
+                        <h3>Dalchini Murgh Pasanda</h3>
+                        <p>Royal cinnamon-kissed chicken in a velvety gravy.</p>
+                        <span class="price">₹310</span>
+                    </div>
+                </article>
+                <article class="card" data-category="momos">
+                    <img src="./assets/images/paneer-tandoori-momos.svg" alt="Paneer Tandoori Momos" />
+                    <div class="card-body">
+                        <h3>Paneer Tandoori Momos</h3>
+                        <p>Smoky, marinated cottage cheese momos.</p>
+                        <span class="price">₹240</span>
+                    </div>
+                </article>
+                <article class="card" data-category="platters">
+                    <img src="./assets/images/non-veg-platter.svg" alt="Non-Veg Platter" />
+                    <div class="card-body">
+                        <h3>Non-Veg Platter</h3>
+                        <p>Chef’s selection of grilled meats and kebabs.</p>
+                        <span class="price">₹550</span>
+                    </div>
+                </article>
+                <article class="card" data-category="salads">
+                    <img src="./assets/images/grilled-chicken-salad.svg" alt="Crispy Grilled Chicken Salad" />
+                    <div class="card-body">
+                        <h3>Crispy Grilled Chicken Salad</h3>
+                        <p>Fresh greens with herbed chicken, house dressing.</p>
+                        <span class="price">₹250</span>
+                    </div>
+                </article>
+                <article class="card" data-category="starters">
+                    <img src="./assets/images/chilli-prawns.svg" alt="Chilli Prawns" />
+                    <div class="card-body">
+                        <h3>Chilli Prawns</h3>
+                        <p>Fiery, wok-tossed prawns with bell peppers.</p>
+                        <span class="price">₹350</span>
+                    </div>
+                </article>
+                <article class="card" data-category="wraps">
+                    <img src="./assets/images/chicken-tikka-wrap.svg" alt="Chicken Tikka Wrap" />
+                    <div class="card-body">
+                        <h3>Chicken Tikka Wrap</h3>
+                        <p>Char-grilled chicken wrapped with crunchy slaw.</p>
+                        <span class="price">₹180</span>
+                    </div>
+                </article>
+                <article class="card" data-category="desserts">
+                    <img src="./assets/images/chocolate-truffle.svg" alt="Chocolate Truffle Pastry" />
+                    <div class="card-body">
+                        <h3>Chocolate Truffle Pastry</h3>
+                        <p>Rich, fudgy layers of chocolate indulgence.</p>
+                        <span class="price">₹95</span>
+                    </div>
+                </article>
+                <article class="card" data-category="desserts">
+                    <img src="./assets/images/virgin-mojito.svg" alt="Virgin Mojito" />
+                    <div class="card-body">
+                        <h3>Virgin Mojito</h3>
+                        <p>Refreshing mint, lime, and fizz.</p>
+                        <span class="price">₹165</span>
+                    </div>
+                </article>
+                <article class="card" data-category="desserts">
+                    <img src="./assets/images/ny-cheesecake.svg" alt="New York Cheesecake" />
+                    <div class="card-body">
+                        <h3>New York Cheesecake</h3>
+                        <p>Classic creamy cheesecake with berry compote.</p>
+                        <span class="price">₹210</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-cta">
+                <a class="btn btn-outline" href="./assets/menu/Reef-Full-Menu.pdf" download>See Full Menu (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-head">
+                <h2>Featured Gallery</h2>
+                <p>Chef-curated highlights</p>
+            </div>
+            <div class="scroll-row">
+                <figure class="tile">
+                    <img src="./assets/images/chilli-fish.svg" alt="Chilli Fish" />
+                    <figcaption>
+                        <span>Chilli Fish</span>
+                        <em>₹320</em>
+                    </figcaption>
+                </figure>
+                <figure class="tile">
+                    <img src="./assets/images/non-veg-platter.svg" alt="Non-Veg Platter" />
+                    <figcaption>
+                        <span>Non-Veg Platter</span>
+                        <em>₹550</em>
+                    </figcaption>
+                </figure>
+                <figure class="tile">
+                    <img src="./assets/images/fruit-punch.svg" alt="Fruit Punch" />
+                    <figcaption>
+                        <span>Fruit Punch</span>
+                        <em>₹180</em>
+                    </figcaption>
+                </figure>
+                <figure class="tile">
+                    <img src="./assets/images/paneer-tikka-masala.svg" alt="Paneer Tikka Masala" />
+                    <figcaption>
+                        <span>Paneer Tikka Masala</span>
+                        <em>₹260</em>
+                    </figcaption>
+                </figure>
+                <figure class="tile">
+                    <img src="./assets/images/cheesecake.svg" alt="Cheesecake" />
+                    <figcaption>
+                        <span>Cheesecake</span>
+                        <em>₹210</em>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section reviews">
+        <div class="container split">
+            <div class="review-copy">
+                <h2>What Guests Say</h2>
+                <ul class="quotes">
+                    <li>
+                        “Amazing ambience… service was very good.” – <strong>Zomato</strong>
+                    </li>
+                    <li>
+                        “Extraordinary culinary experience… elegant ambiance.” – <strong>Zomato</strong>
+                    </li>
+                    <li>
+                        “Service can be slow during rains, but food is worth it.” – <strong>Local Feedback</strong>
+                    </li>
+                </ul>
+                <div class="rating">
+                    <span aria-hidden="true">★★★★★</span>
+                    <span class="sr-only">4.7 out of 5</span>
+                </div>
+                <a href="#contact" class="btn btn-primary">Leave a Review</a>
+            </div>
+            <div class="review-media">
+                <img src="./assets/images/rooftop-lifestyle.svg" alt="Guests enjoying rooftop dining" />
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="section info">
+        <div class="container grid-4">
+            <div class="info-card">
+                <div class="icon" aria-hidden="true">📍</div>
+                <h3>Address</h3>
+                <p>Hotel Coral Grand, Purulia Road, Kantatoli, Ranchi<br/>(Opposite Audi Showroom)</p>
+                <div class="map-wrap">
+                    <iframe title="Map to Reef Rooftop Restaurant" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps?q=Hotel+Coral+Grand,+Purulia+Road,+Kantatoli,+Ranchi&output=embed"></iframe>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="icon" aria-hidden="true">⏰</div>
+                <h3>Opening Hours</h3>
+                <p>Daily, 12:00 PM – 10:30/11:00 PM</p>
+                <a class="btn btn-ghost small" href="#contact">Book Table Now</a>
+            </div>
+            <div class="info-card">
+                <div class="icon" aria-hidden="true">💰</div>
+                <h3>Average Price</h3>
+                <p>₹600–₹750 for two people</p>
+                <p class="muted">Prices may vary by selection.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon" aria-hidden="true">☑️</div>
+                <h3>Amenities</h3>
+                <ul class="mini-list">
+                    <li>Rooftop seating</li>
+                    <li>Live music</li>
+                    <li>Takeaway & Delivery</li>
+                    <li>Wheelchair accessible</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container two-col reverse">
+            <div class="contact-form">
+                <h2>Reserve a Table</h2>
+                <form id="reservation-form" novalidate>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your full name" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+91-XXXXXXXXXX" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" />
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-row">
+                            <label for="date">Date</label>
+                            <input id="date" name="date" type="date" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="time">Time</label>
+                            <input id="time" name="time" type="time" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="guests">Guests</label>
+                            <input id="guests" name="guests" type="number" min="1" max="20" value="2" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Request Reservation</button>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h3>Contact</h3>
+                <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+                <p><strong>Email:</strong> reservations@reefrooftop.in</p>
+                <div class="social">
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Zomato">🍽️</a>
+                </div>
+                <p class="highlight">Best enjoyed at sunset for a scenic dining experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo-row">
+                    <span class="logo">Reef</span>
+                    <span class="brand-text">Rooftop Restaurant</span>
+                </div>
+                <p class="muted">Hotel Coral Grand, Purulia Road, Kantatoli, Ranchi</p>
+            </div>
+            <div class="footer-actions">
+                <a href="#menu" class="btn btn-ghost small">View Menu</a>
+                <a href="#contact" class="btn btn-primary small">Book Table Now</a>
+            </div>
+        </div>
+        <p class="copy">© 2025 Reef Rooftop Restaurant</p>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+    <noscript>Enable JavaScript for smooth animations and interactions.</noscript>
+    
+</body>
+</html>
+
+
